@@ -1,0 +1,104 @@
+// Colors Variables
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// Font Variable
+$poppins: "Poppins", sans-serif;
+
+//Function convert pixel values to rem
+@function rem($px-value) {
+  @return calc($px-value / 16) + rem;
+}
+
+//Style
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  font-family: $poppins;
+  color: $dark-blue;
+  h1 {
+    font-size: rem(22);
+    font-weight: 200;
+  }
+  h2 {
+    font-size: rem(22);
+    font-weight: 600;
+  }
+  p {
+    color: $grayish-blue;
+    font-size: rem(14);
+    margin-top: rem(20);
+  }
+  .section {
+    h3 {
+      font-size: rem(20);
+      font-weight: 600;
+    }
+    p {
+      font-size: rem(12);
+    }
+    .section_card {
+      background-color: $white;
+      border-radius: 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      padding: rem(25);
+      margin-top: rem(20);
+      img {
+        margin-top: rem(10);
+        width: rem(50);
+      }
+    }
+    .section_supervisor {
+      border-top: 3px solid $cyan;
+    }
+    .section_tb {
+      border-top: 3px solid $red;
+    }
+    .section_karma {
+      border-top: 3px solid $orange;
+    }
+    .section_calculator {
+      border-top: 3px solid $blue;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .component {
+    h1 {
+      font-size: rem(38);
+    }
+    h2 {
+      font-size: rem(38);
+    }
+    p {
+      font-size: rem(16);
+    }
+    .section {
+      h3 {
+        font-size: rem(21);
+      }
+      p {
+        font-size: rem(14);
+      }
+      .section_card {
+        padding: rem(30);
+        img {
+          margin-top: rem(20);
+          width: rem(65);
+        }
+      }
+    }
+  }
+}

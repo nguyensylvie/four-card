@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  font-family: "Poppins", sans-serif;
+  color: hsl(234, 12%, 34%);
+}
+.component h1 {
+  font-size: 1.375rem;
+  font-weight: 200;
+}
+.component h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+.component p {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.875rem;
+  margin-top: 1.25rem;
+}
+.component .section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.component .section p {
+  font-size: 0.75rem;
+}
+.component .section .section_card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 1.5625rem;
+  margin-top: 1.25rem;
+}
+.component .section .section_card img {
+  margin-top: 0.625rem;
+  width: 3.125rem;
+}
+.component .section .section_supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.component .section .section_tb {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.component .section .section_karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.component .section .section_calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 768px) {
+  .component h1 {
+    font-size: 2.375rem;
+  }
+  .component h2 {
+    font-size: 2.375rem;
+  }
+  .component p {
+    font-size: 1rem;
+  }
+  .component .section h3 {
+    font-size: 1.3125rem;
+  }
+  .component .section p {
+    font-size: 0.875rem;
+  }
+  .component .section .section_card {
+    padding: 1.875rem;
+  }
+  .component .section .section_card img {
+    margin-top: 1.25rem;
+    width: 4.0625rem;
+  }
+}/*# sourceMappingURL=style.css.map */
