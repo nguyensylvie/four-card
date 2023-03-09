@@ -7,6 +7,8 @@ body {
 .component {
   font-family: "Poppins", sans-serif;
   color: hsl(234, 12%, 34%);
+  background-color: hsl(0, 0%, 98%);
+  padding: 5rem 0;
 }
 .component h1 {
   font-size: 1.375rem;

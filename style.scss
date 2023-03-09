@@ -26,6 +26,8 @@ body {
 .component {
   font-family: $poppins;
   color: $dark-blue;
+  background-color: $light-gray;
+  padding: rem(80) 0;
   h1 {
     font-size: rem(22);
     font-weight: 200;
